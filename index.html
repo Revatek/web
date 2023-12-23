@@ -22,6 +22,8 @@
             background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
             padding: 20px;
             border-radius: 10px;
+            width: 80%; /* Set a percentage width */
+            max-width: 600px; /* Maximum width */
         }
         img {
             height: 100px; /* Adjust as needed */
@@ -29,6 +31,13 @@
         }
         p {
             color: #000;
+        }
+
+        /* Media query for screens smaller than 600px */
+        @media (max-width: 600px) {
+            .container {
+                width: 90%; /* Increase width on small screens */
+            }
         }
     </style>
 </head>
