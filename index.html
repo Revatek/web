@@ -7,43 +7,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg.png');
-            background-size: cover;
-            background-position: center;
+            background: url('bg.png') center / cover no-repeat;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
         }
         .container {
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+            background-color: rgba(255, 255, 255, 0.5);
             padding: 20px;
             border-radius: 10px;
-            width: 80%; /* Set a percentage width */
-            max-width: 600px; /* Maximum width */
-            margin: 20px; /* Add a margin */
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
         }
         .container img {
-            width: 100%; /* Make the image responsive */
-            max-width: 300px; /* Maximum width */
-            height: auto; /* Keep the aspect ratio */
+            width: 100%;
+            max-width: 300px;
+            height: auto;
             border-radius: 10px;
         }
         p {
             color: #000;
         }
 
-        /* Media query for screens smaller than 600px */
         @media (max-width: 600px) {
             .container {
-                width: calc(100% - 40px); /* Subtract the left and right margin from the width */
-                padding: 10px; /* Reduce padding on small screens */
+                width: calc(100% - 40px);
+                padding: 10px;
             }
             .container img {
-                max-width: 80%; /* Reduce image size on small screens */
+                max-width: 80%;
             }
         }
     </style>
@@ -51,7 +49,7 @@
 <body>
     <div class="container">
         <img src="Color logo - no background.svg" alt="Revatek">
-        <p>We're working on the next generation of mobile power. Stay tuned for more information.</p>
+        <p>We're working on the next generation of mobile power. Stay tuned.</p>
     </div>
 </body>
 </html>
