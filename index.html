@@ -26,7 +26,8 @@
             max-width: 600px; /* Maximum width */
         }
         img {
-            height: 100px; /* Adjust as needed */
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Keep the aspect ratio */
             border-radius: 10px;
         }
         p {
@@ -38,6 +39,9 @@
             .container {
                 width: 100%; /* Increase width on small screens */
                 padding: 10px; /* Reduce padding on small screens */
+            }
+            img {
+                height: 80px; /* Reduce image size on small screens */
             }
         }
     </style>
