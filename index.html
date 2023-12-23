@@ -25,8 +25,9 @@
             width: 80%; /* Set a percentage width */
             max-width: 600px; /* Maximum width */
         }
-        img {
-            max-width: 100%; /* Make the image responsive */
+        .container img {
+            width: 100%; /* Make the image responsive */
+            max-width: 300px; /* Maximum width */
             height: auto; /* Keep the aspect ratio */
             border-radius: 10px;
         }
@@ -37,11 +38,11 @@
         /* Media query for screens smaller than 600px */
         @media (max-width: 600px) {
             .container {
-                width: 100%; /* Increase width on small screens */
+                width: 95%; /* Increase width on small screens */
                 padding: 10px; /* Reduce padding on small screens */
             }
-            img {
-                height: 80px; /* Reduce image size on small screens */
+            .container img {
+                max-width: 80%; /* Reduce image size on small screens */
             }
         }
     </style>
